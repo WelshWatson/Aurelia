@@ -3,6 +3,11 @@ import {RouterConfiguration, Router} from 'aurelia-router';
   
 export class App {
   router: Router;
+  style: string;
+
+  constructor() {
+    this.style = 'top: 25px;'
+  }
 
   configureRouter(config: RouterConfiguration, router: Router): void {
     this.router = router;
