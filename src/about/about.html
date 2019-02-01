@@ -3,13 +3,12 @@
     <div class="col-12">
       <div class="bs-component">
         <div class="jumbotron">
-          <h1 class="display-3">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-            featured content or information.</p>
+          <h1 class="display-3">${aboutvalue}</h1>
+          <p class="lead">This is now the about page:</p>
           <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <p>The button below publishes a new message to the 'new-message' event aggregator, click it to see the text in the home page change!</p>
           <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <button class="btn btn-primary btn-lg" href="#" role="button" click.trigger="changeText()">THE ABOUT PAGE!!!!!</button>
           </p>
         </div>
         <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
